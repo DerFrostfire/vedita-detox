@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <title>Detox</title>
+</head>
+    <body>
+        <header>
+            <div class="navbar">
+                <div class="container">
+                    <div class="navbar-top">
+                        <img src="static/img/logo_green.svg" alt="логотип" class="navbar-logo">
+                        <div class="navbar-top-items">
+                            <div class="navbar-top__item">
+                                <img src="static/img/map_mark_nav.svg" class="navbar-top__icon">
+                                <a href="#" class="navbar-top__text">Тамбов</a>
+                            </div>
+                            <div class="navbar-top__item">
+                                <img src="static/img/call_nav.svg" class="navbar-top__icon">
+                                <span class="navbar-top__number">+7 (915) 660 09-09</span>
+                            </div>
+                            <div class="navbar-top__item">
+                                <img src="static/img/clock_nav.svg" class="navbar-top__icon">
+                                <span class="navbar-top__text"> 09:00-21:00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr/>
+                <div class="container">
+                    <div class="navbar-bottom">
+                        <div class="navbar-bottom-items">
+                            <a href="#" class="navbar-item">Меню ресторана</a>
+                            <a href="#" class="navbar-item">Бизнес-ланч</a>
+                            <a href="#" 3class="navbar-item">Детокс</a>
+                            <a href="#" id="rations" class="navbar-item">Рационы</a>
+                        </div>
+                        <div class="navbar-ending">
+                                <div class="cart-item"></a>
+                                    <div class="cart-icon">
+                                        <div class="circle">3</div>
+                                        <img src="static/img/cart_nav.svg" alt="Корзина" class="navbar-bottom__icon">
+                                    </div>
+                                    <a class="cart-text" href="#">Корзина</a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-frame">
+                <div class="swiper main-swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="static/img/main_frame.png" alt="картинка" class="slide-img">
+                            <div class="container">
+                                <div class="slide-content">
+                                    <h1>Детокс-<span>программа</span> </h1>
+                                    <p>
+                                        комплексного очищения организма<br>
+                                        от <strong>1099 </strong>руб
+                                    </p>
+                                    <button class="slide-order-button">
+                                        Заказать
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="static/img/main_frame.png" alt="картинка" class="slide-img">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="static/img/main_frame.png" alt="картинка" class="slide-img">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="static/img/main_frame.png" alt="картинка" class="slide-img">
+                        </div>
+                    </div>
+                  
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+               
+            </div>
+        </header>
+        <div class="advantages">
+            <div class="container">
+                <div class="advantages-wrapper">
+                    <div class="advantage-item">
+                        <div class="advantage-item__image">
+                            <img src="./static/img/vegetable.svg"  class="advantage-item__primary">
+                            <img src="./static/img/broccoli_g.svg"  class="advantage-item__secondary">
+                        </div>
+                        <div class="advantage-item__description">
+                            Используем только натуральные продукты, блюда без консервантов и искусственных добавок.
+                        </div>
+                    </div>
+                    <div class="advantage-item">
+                        <div class="advantage-item__image">
+                            <img src="./static/img/list.svg"  class="advantage-item__primary">
+                            <img src="./static/img/apple_g.svg"  class="advantage-item__secondary">
+                        </div>
+                        <div class="advantage-item__description">
+                            Сбалансированное <br> здоровое меню, соответствующее КБЖУ
+                        </div>
+                    </div>
+                    <div class="advantage-item">
+                        <div class="advantage-item__image">
+                            <img src="./static/img/training.svg"  class="advantage-item__primary">
+                            <img src="./static/img/timer_g.svg" class="advantage-item__secondary">
+                        </div>
+                        <div class="advantage-item__description">
+                            По желанию подберем программу тренировок и составим индивидуальное КБЖУ для любого уровня подготовки.
+                        </div>
+                    </div>
+                    <div class="advantage-item">
+                        <div class="advantage-item__image">
+                            <img src="./static/img/food.svg" class="advantage-item__primary">
+                            <img src="./static/img/spoon_knife_g.svg" class="advantage-item__secondary">
+                        </div>
+                        <div class="advantage-item__description">
+                            Бесплатная доставка, чтобы сэкономить массу времени и сил для более важных и приятных дел.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rations">
+            <div class="container">
+                <div class="rations-head">Рационы</div>
+                <div class="rations-wrapper">
+                    <div class="rations-item">
+                        <div class="rations-item-image-wrapper">
+                            <img class="rations-item__image" src="./static/img/balance.jpg">
+                        </div>
+                        <div class="rations-item__title">Баланс</div>
+                        <div class="rations-item__description">
+                            Здоровое питание на каждый день
+                            для тех, кто  заботится о своем ежедневном рационе.
+                        </div>
+                        <div class="rations-item__colories">~1 800 ккал</div>
+                        <div class="rations-item-pay">
+                            <strong class="rations-item__price">1190₽</strong>
+                            <button class="rations-item-button">Выбрать</button>
+                        </div>
+                        
+                    </div>
+                    <div class="rations-item">
+                        <div class="rations-item-wrapper">
+                            <img class="rations-item__image" src="./static/img/lite.jpg">
+                        </div>
+                        <div class="rations-item__title">ЛАЙТ</div>
+                        <div class="rations-item__description">
+                            Четырехразовое меню для похудения, поддержания формы и создания рельефа.
+                        </div>
+                        <div class="rations-item__colories">~1 400 ккал</div>
+                        <div class="rations-item-pay">
+                            <strong class="rations-item__price">1050₽</strong>
+                            <button class="rations-item-button">Выбрать</button>
+                        </div>
+                        
+                    </div>
+                    <div class="rations-item">
+                        <div class="rations-item-wrapper">
+                            <img class="rations-item__image" src="./static/img/super_lite.jpg">
+                        </div>
+                        <div class="rations-item__title">Супер лайт</div>
+                        <div class="rations-item__description">
+                            Быстрое похудение и поддержание формы. Трехразовое меню для быстрого снижения веса без спорта.
+                        </div>
+                        <div class="rations-item__colories">~900 ккал</div>
+                        <div class="rations-item-pay">
+                            <strong class="rations-item__price">890₽</strong>
+                            <button class="rations-item-button">Выбрать</button>
+                        </div>
+                        
+                    </div>
+                    <div class="rations-item">
+                        <div class="rations-item-wrapper">
+                            <img class="rations-item__image" src="./static/img/mass.jpg">
+                        </div>
+                        <div class="rations-item__title">масс</div>
+                        <div class="rations-item__description">
+                            Сбалансированное питание для поддержания оптимальной формы при тренировках.
+                        </div>
+                        <div class="rations-item__colories">~1 800 ккал</div>
+                        <div class="rations-item-pay">
+                            <strong class="rations-item__price">1490₽</strong>
+                            <button class="rations-item-button">Выбрать</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about-us">
+            <div class="container">
+                <div class="about-us-wrapper">
+                    <div class="about-us-image-wrapper">
+                        <img class="about-us-image" src="./static/img/about_us.jpg">
+                    </div>
+                    <div class="about-us-text">
+                        <strong class="about-us__header">О нас</strong>
+                        <p class="about-us__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisi, neque, et leo nulla nisl. Neque parturient elementum habitasse etiam nec. Fermentum justo nam nibh vitae pellentesque integer. Imperdiet habitant tortor est amet tortor viverra. Nulla eget commodo, adipiscing arcu in et risus in.</p>
+                        <p class="about-us__description">Cras eu molestie consectetur amet at euismod. Nunc elementum lorem pharetra cursus risus eu. Ac feugiat arcu etiam eget sem urna tincidunt lacus. Nec morbi ultrices nulla accumsan adipiscing. Elementum sagittis eu placerat non molestie luctus gravida. Risus laoreet nunc lectus orci. Vitae at augue sagittis. Sed faucibus ultrices elementum faucibus varius leo, vitae. Molestie semper habitant varius eleifend nisi faucibus. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="delivery">
+            <div class="container">
+                <div class="delivery-wrapper">
+                    <div class="delivery-text">
+                        <strong class="delivery-text-title">Условия доставки</strong>
+                        <div class="delivery-text-description">
+                            <p class="delivery-text-description__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisi, neque, et leo nulla nisl. Neque parturient elementum habitasse etiam nec.</p>
+                            <p class="delivery-text-description__item"> Fermentum justo nam nibh vitae pellentesque integer. Imperdiet habitant tortor est amet tortor viverra.</p>
+                        </div>
+                        <button class="delivery-button">Связаться с нами</button>
+                    </div>
+                    <div class="delivery-map">
+                        <div style="position:relative;overflow:hidden; height: 100%;">
+                            <a href="https://yandex.ru/maps/org/slon_i_solod/191842891390/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Слон и Солод</a>
+                            <a href="https://yandex.ru/maps/13/tambov/category/bar_pub/184106384/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Бар, паб в Тамбове</a><a href="https://yandex.ru/maps/13/tambov/category/cafe/184106390/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Кафе в Тамбове</a>
+                            <iframe src="https://yandex.ru/map-widget/v1/?display-text=%D0%93%D0%B4%D0%B5%20%D0%BF%D0%BE%D0%B5%D1%81%D1%82%D1%8C&ll=41.469672%2C52.723919&mode=search&oid=191842891390&ol=biz&sll=41.452749%2C52.721293&sspn=0.239468%2C0.085365&text=%D0%93%D0%B4%D0%B5%20%D0%BF%D0%BE%D0%B5%D1%81%D1%82%D1%8C&z=14" width="560" frameborder="1" allowfullscreen="true" style="position:relative; border: 0;border-left: 1px #E4E4E4 solid; border-radius: 0 14px 14px 0; height: 100%;"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="footer-info">
+                    <img class="footer-logo" src="./static/img/logo_white.svg">
+                    <div class="footer-column">
+                        <a href="#">Контакты</a>
+                        <a href="#">О компании</a>
+                    </div>
+                    <div class="footer-column">
+                        <a href="#">Оплата</a>
+                        <a href="#">Доставка</a>
+                    </div>
+                    <div class="footer-column">
+                        <a href="#">Публичная оферта</a>
+                        <a href="#">Политика конфиденциальности</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-line">
+            <div class="container">
+                <div class="footer-copyright">
+                    <div class="footer-socials">
+                        <span>© 2022</span>
+                        <img footer-socials__instagram src="static/img/inst.svg" alt="">
+                    </div>
+                    <div class="footer-cookies">Мы используем cookies для быстрой и удобной работы сайта. Продолжая пользоваться сайтом, вы принимаете условия обработки персональных данных</div>
+                </div>
+            </div>
+        </footer>
+        <div class="contact-form inactive">
+            <div class="modal-overlay">
+                <div class="contact-form-content modal">
+                    <div class="close-modal-img-wrapper">
+                        <img src="./static/img/x.svg" class="close-modal-img close-contact">
+                    </div>
+                    <div class="modal-container">
+                        <form action="#" id="contact-sender">
+                            <span class="modal-title">Форма обратной связи</span>
+                            <div class="contact-form-input">
+                                <div class="input-item">
+                                    <span class="input-name">
+                                        Ваше имя <span class="green">*</span>
+                                    </span>
+                                    <input type="text" class="input-space" required>
+                                </div>
+                                <div class="input-item">
+                                    <span class="input-name">
+                                        Телефон <span class="green">*</span>
+                                    </span>
+                                    <input type="text" class="input-space" required>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="modal-button-wrapper">
+                            <button type="submit" form="contact-sender" class="modal-button button-send" >Отправить</button>
+                        </div>
+                        <div class="contact-form-agreement">Нажимая на кнопку, вы соглашаетесь на обработку <a class="green" href="#">персональных данных</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="success-form inactive">
+            <div class="modal-overlay">
+                <div class="success-content modal">
+                    <div class="close-modal-img-wrapper">
+                        <img src="./static/img/x.svg" class="close-modal-img close-success">
+                    </div>
+                    <div class="modal-container">
+                        <span class="modal-title">Форма обратной связи</span>
+                        <div class="modal-success__description">Ваша заявка успешно отправлена.</div>
+                        <div class="modal-button-wrapper">
+                            <button class="modal-button button-close">Закрыть</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
