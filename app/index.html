@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Detox</title>
 </head>
     <body>
@@ -14,17 +15,17 @@
                     <div class="navbar-top">
                         <img src="static/img/logo_green.svg" alt="логотип" class="navbar-logo">
                         <div class="navbar-top-items">
-                            <div class="navbar-top__item">
-                                <img src="static/img/map_mark_nav.svg" class="navbar-top__icon">
+                            <div class="navbar-top__item ">
+                                <img src="static/img/map_mark_nav.svg" class="navbar-top__icon ">
                                 <a href="#" class="navbar-top__text">Тамбов</a>
                             </div>
-                            <div class="navbar-top__item">
-                                <img src="static/img/call_nav.svg" class="navbar-top__icon">
-                                <span class="navbar-top__number">+7 (915) 660 09-09</span>
+                            <div class="navbar-top__item nav-hidden-last">
+                                <img src="static/img/call_nav.svg" class="navbar-top__icon nav-hidden-last">
+                                <span class="navbar-top__number nav-hidden-last">+7 (915) 660 09-09</span>
                             </div>
-                            <div class="navbar-top__item">
-                                <img src="static/img/clock_nav.svg" class="navbar-top__icon">
-                                <span class="navbar-top__text"> 09:00-21:00</span>
+                            <div class="navbar-top__item nav-hidden">
+                                <img src="static/img/clock_nav.svg" class="navbar-top__icon nav-hidden">
+                                <span class="navbar-top__text nav-hidden"> 09:00-21:00</span>
                             </div>
                         </div>
                     </div>
@@ -32,20 +33,24 @@
                 <hr/>
                 <div class="container">
                     <div class="navbar-bottom">
-                        <div class="navbar-bottom-items">
-                            <a href="#" class="navbar-item">Меню ресторана</a>
-                            <a href="#" class="navbar-item">Бизнес-ланч</a>
-                            <a href="#" 3class="navbar-item">Детокс</a>
-                            <a href="#" id="rations" class="navbar-item">Рационы</a>
+                        <div class="navbar-bottom-items nav-hidden">
+                            <a href="#" class="navbar-item nav-hidden">Меню ресторана</a>
+                            <a href="#" class="navbar-item nav-hidden">Бизнес-ланч</a>
+                            <a href="#" class="navbar-item nav-hidden">Детокс</a>
+                            <a href="#" id="rations" class="navbar-item nav-hidden" >Рационы</a>
                         </div>
+                        <button class="navbar-menu-button" onclick="openMenu()">
+                            <i class='bx bx-menu'></i>
+                        </button>
+                    
                         <div class="navbar-ending">
-                                <div class="cart-item"></a>
-                                    <div class="cart-icon">
-                                        <div class="circle">3</div>
-                                        <img src="static/img/cart_nav.svg" alt="Корзина" class="navbar-bottom__icon">
-                                    </div>
-                                    <a class="cart-text" href="#">Корзина</a>
+                            <div class="cart-item"></a>
+                                <div class="cart-icon">
+                                    <div class="circle">3</div>
+                                    <img src="static/img/cart_nav.svg" alt="Корзина" class="navbar-bottom__icon">
                                 </div>
+                                <a class="cart-text" href="#">Корзина</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -64,9 +69,11 @@
                                         комплексного очищения организма<br>
                                         от <strong>1099 </strong>руб
                                     </p>
-                                    <button class="slide-order-button">
-                                        Заказать
-                                    </button>
+                                    <div class="order-button-wrapper ">
+                                        <button class="slide-order-button ">
+                                            Заказать
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -81,12 +88,11 @@
                         </div>
                     </div>
                   
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev "></div>
+                    <div class="swiper-button-next "></div>
 
-                    <div class="swiper-pagination"></div>
+                    <div class="swiper-pagination nav-hidden-last"></div>
                 </div>
-               
             </div>
         </header>
         <div class="advantages">
@@ -133,9 +139,10 @@
         </div>
         <div class="rations">
             <div class="container">
-                <div class="rations-head">Рационы</div>
+                
                 <div class="rations-wrapper">
                     <div class="rations-item">
+                        <div class="rations-head">Рационы</div>
                         <div class="rations-item-image-wrapper">
                             <img class="rations-item__image" src="./static/img/balance.jpg">
                         </div>
@@ -227,7 +234,7 @@
                         <div style="position:relative;overflow:hidden; height: 100%;">
                             <a href="https://yandex.ru/maps/org/slon_i_solod/191842891390/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Слон и Солод</a>
                             <a href="https://yandex.ru/maps/13/tambov/category/bar_pub/184106384/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Бар, паб в Тамбове</a><a href="https://yandex.ru/maps/13/tambov/category/cafe/184106390/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Кафе в Тамбове</a>
-                            <iframe src="https://yandex.ru/map-widget/v1/?display-text=%D0%93%D0%B4%D0%B5%20%D0%BF%D0%BE%D0%B5%D1%81%D1%82%D1%8C&ll=41.469672%2C52.723919&mode=search&oid=191842891390&ol=biz&sll=41.452749%2C52.721293&sspn=0.239468%2C0.085365&text=%D0%93%D0%B4%D0%B5%20%D0%BF%D0%BE%D0%B5%D1%81%D1%82%D1%8C&z=14" width="560" frameborder="1" allowfullscreen="true" style="position:relative; border: 0;border-left: 1px #E4E4E4 solid; border-radius: 0 14px 14px 0; height: 100%;"></iframe>
+                            <iframe class="map-frame" src="https://yandex.ru/map-widget/v1/?display-text=%D0%93%D0%B4%D0%B5%20%D0%BF%D0%BE%D0%B5%D1%81%D1%82%D1%8C&ll=41.469672%2C52.723919&mode=search&oid=191842891390&ol=biz&sll=41.452749%2C52.721293&sspn=0.239468%2C0.085365&text=%D0%93%D0%B4%D0%B5%20%D0%BF%D0%BE%D0%B5%D1%81%D1%82%D1%8C&z=14" frameborder="1" allowfullscreen="true" ></iframe>
                         </div>
                     </div>
                 </div>

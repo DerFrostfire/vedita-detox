@@ -14,6 +14,11 @@ function scrollToElement(elem){
     document.querySelector(elem).scrollIntoView({ behavior: 'smooth' });
 };
 
+function openMenu() {
+    const nav = document.querySelector('.navbar');
+    nav.classList.toggle('open');
+}
+
 const orderButton = document.querySelector('.slide-order-button');
 orderButton.addEventListener("click",  () => {
     scrollToElement('.delivery');

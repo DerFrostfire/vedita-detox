@@ -17,10 +17,17 @@ a{
 
 header{
     color: black;
+    width: 100vw;
 }
+
+.inactive{
+    display: none;
+}
+
 .container {
+
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
     padding: 0 15px;
 }
 
@@ -40,13 +47,34 @@ header{
     .container{
         max-width: none;
     }
-}
-
-@media (max-width:1200px) {
-    .container{
-        max-width: 970px;
+    .nav-hidden{
+        display: none;
+    }
+    .navbar-bottom .navbar-menu-button{
+        display: flex;
+    }
+    .order-button-wrapper .slide-order-button{
+        max-width: 100px;
+        font-size: 12px;
+        max-height: 30px;
     }
 }
+@media (max-width:500px) {
+    .nav-hidden-last{
+        display: none;
+    }
+    
+    .order-button-wrapper .slide-order-button{
+        max-width: 70px;
+        font-size: 10px;
+        max-height: 20px;
+    }
+    .delivery-text .delivery-button{
+        width: 111px;
+        height: 45px;  
+    }
+}
+
 button{
     display: flex;
     justify-content: center;
@@ -74,22 +102,33 @@ hr{
     border: none;
     margin: 0;
 }
+/* navbar  */
 
+.navbar{
+    height: 150px;
+}
 
+.navbar-menu-button{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    padding: 7px;
+}
 /* navar top side  */
 .navbar-top,
 .navbar-bottom{
     display: flex;
     justify-content: space-between;
-    min-height: 65px;
+    height: 75px;
     align-items: center;
-    
 }
 .navbar-top-items{
-    min-width: 85%;
+    width: 85%; 
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 20px;
 }
 .navbar-top__item{
     display: flex;
@@ -97,11 +136,12 @@ hr{
     align-items: center;
 
     text-align: right;
-    min-width: 200px;
+    max-width: 200px;
+    padding: 0 10px 0 10px;
 }
 
 .navbar-top__icon{
-    max-height: 15px;
+    height: 15px;
     padding-right: 10px;
 }
 .navbar-top__number{
@@ -110,7 +150,7 @@ hr{
 
 /* navbar bottom side  */
 .navbar-bottom-items{
-    min-width: 500px;
+    width: 500px;
     display: flex;
     justify-content: space-between;
 }
@@ -147,23 +187,24 @@ hr{
 }
 
 .cart-icon{
-    min-width: 20px;
+    width: 20px;
     position: relative;
     margin-right: 16px;
 }
 
 /* slider */
 .main-frame{
-    min-height: 700px;
-    margin-bottom: 4vw;
+    max-height: 700px;
+    margin-bottom: 90px;
+    max-width: 100%;
 }
 
 h1{
     color:#6CB71D;
-    font-size: 60px;
+    font-size: calc(6px + 45 * (100vw / 1280));
     font-weight: bold;
     margin-bottom: 0;
-    line-height: 64px;
+    line-height: 1em;
 }
 h1 span{
     display: block;
@@ -175,9 +216,19 @@ h1 span{
     height: 100%;
 }
 
+.swiper-slide {
+    text-align: center;
+    font-size: calc(5px + 11 * (100vw / 1280));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
 .slide-content{
+
     position: absolute;
-    top: 23%;
+    top: 5vw;
     left: 18%;
     text-align: left;
     text-transform: uppercase;
@@ -186,104 +237,126 @@ h1 span{
 
 .slide-img{
     width: 100%;
+    min-height: 100%;
 }
 
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-.slide-content p{
-    line-height: 30px;
-}
+
+
 .slide-content strong{
-    font-size: 27px;
+    font-size: calc(7px + 16 * (100vw / 1280));
 }
-.slide-order-button{
-    width: 175px;
+.order-button-wrapper{
+    max-width: 175px;
     height: 44px;
 }
+.slide-order-button{
+    width: 100%;
+    height: 100%;
+}
+
 .swiper-button-prev::after{
     color: white;
-    font-size: 70px;
+    font-size: calc(5px + 24* (100vw / 1280)) !important;
     margin-left: 12vw;  
 }
 
 .swiper-button-next::after{
     color: white;
-    font-size: 70px;
+    font-size: calc(5px + 24* (100vw / 1280)) !important;
     margin-right: 12vw;
 } 
 
 .swiper-pagination{
-    margin-bottom: 5vh;
+    margin-bottom: 1%;
 }
 
 .swiper-pagination-bullet-active{
     background-color: #fff !important;
+    
 }
 
 .swiper-pagination-bullet{
     border: #fff 3px solid;
+    max-width: 8px !important;
+    max-height: 8px !important;
 }
+
 /* advantages */
+
 .advantages{
     margin-bottom: 160px;
-    color: black;
+    
 }
 
 .advantages-wrapper{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: space-around;       
+    width: 100%;
+    align-items: center;
+                                                
 }
 
 .advantage-item{
-    max-width: 21%;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    line-height: 21px;
-    padding: 0 10px 0 10px;
-    
+    padding: 15px;
+    max-width: 250px;
+
 }
+
 .advantage-item__image{
     position: relative;
     display: flex;
     width: 100%;
     height: 100%;
-    margin-bottom: -20px;
     justify-content: center;
+    
 }
+
 .advantage-item__primary{
     position: absolute;
-    height: 50%;
-    bottom: 45%;
-    left:  25%;
+    height: 100%;
+    bottom: 42%;
+    left:  27%;
 }
+
 .advantage-item__secondary{
     width: 60px;
+}
+
+.advantage-item__description{
+    display: block;
+    color: black;
+    line-height: 21px;
+    height: 130px;
 }
 
 /* rations */
 .rations{
     margin-bottom: 140px;
 }
+
 .rations-head{
+    margin-top: -85px;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 30px;
-
     margin-bottom: 50px;
 }
 
 .rations-wrapper{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+    align-content: center;
 }
 
 .rations-item{
-    width: 23%;
+    max-width: 280px;
+    padding: 10px;
 }
 
 .rations-item__image{
@@ -335,28 +408,29 @@ h1 span{
 
 .about-us{
     margin-bottom: 100px;
+    padding: 0 10px 0 10px;
 }
 
 .about-us-wrapper{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around; 
     align-items: center;
+    flex-wrap: wrap;
 }
 .about-us-image-wrapper{
-    width: 50%;
+    max-width: 100%;
     height: 100%;
 }
 
 .about-us-image{
-    height: 100%;
-    width: 100%;
+    max-height: 100%;
+    max-width: 100%;
 }
 
-
 .about-us-text{
-    width: 50%;
+    max-width: 560px;
     text-align: left;
-    padding: 50px;
+    padding: 20px
 }
 .about-us__header{
     text-transform: uppercase;
@@ -372,36 +446,54 @@ h1 span{
 /* delivery */
 
 .delivery{
+    display: flex;
     margin-bottom: 100px;
+    justify-content: center;
 }
 .delivery-wrapper{
     display: flex;
     justify-content: space-between;
+
+    
     border: #E4E4E4 1px solid;
     border-radius: 14px;
 }
 
 .delivery-text{
-    width: 50%;
-    padding: 70px;
+    max-width: 40%;
+    padding: 5%;
 }
 .delivery-text-title{
     display: block;
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: calc(19px + 11 * (100vw / 1280));
 
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .delivery-text-description{
     margin-bottom: 40px;
-    width: 72%;
-    font-size: 15px;
+    max-width: 100%;
+    font-size: calc(12px + 6 * (100vw / 1280));
     line-height: 24px;
 }
 .delivery-button{
     width: 181px;
-    height: 35px;
+    height: 35px;  
+}
+
+.delivery-map{
+    
+    width: 50%;
+}
+.map-frame{
+    height: 100%;
+    width: 100%;
+    
+    position:relative; 
+    border: 0;
+    border-left: 1px #E4E4E4 solid;
+    border-radius: 0 14px 14px 0; 
     
 }
 /* footer  */
@@ -414,6 +506,9 @@ footer{
     font-weight: 400;
 }
 
+.footer-logo{
+    padding: 10px;
+}
 footer a{
     display: block;
     color: #fff;
@@ -427,6 +522,7 @@ footer a:hover{
 .footer-info{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     font-size: 15px;
     margin-bottom: 50px;
     padding-right: 80px;
@@ -440,10 +536,12 @@ footer a:hover{
     margin: auto;
     margin-bottom: 25px;
 }
+
 .footer-copyright{
     font-size: 14px;
     
 }
+
 .footer-socials{
     display: flex;
     justify-content: space-between;
@@ -451,7 +549,9 @@ footer a:hover{
     padding: 10px;
     padding-left: 0;
 }
+
 /* all modal forms  */
+
 .modal-overlay{
     position: fixed;
     z-index: 1;
@@ -470,7 +570,7 @@ footer a:hover{
 
 .modal{
     display: block;
-    width: 27%;
+    max-width: 520px;
     background-color: #fff;
     text-align: center;
     padding: 20px;
@@ -497,9 +597,7 @@ footer a:hover{
     padding: 0 5%;
     margin-bottom: 40px;
 }
-.inactive{
-    display: none;
-}
+
 .modal-button-wrapper{
     display: flex;
     justify-content: center;
@@ -508,14 +606,17 @@ footer a:hover{
     display: block;
     margin-top: 10px;
     margin-bottom: 30px;
-    height: 44px;
-    width: 156px;
+    max-height: 44px;
+    max-width: 156px;
+
+    min-height: 35px;
+    min-width: 120px;
 }
 
 /* contact forms  */
 
 .contact-form-content{
-    height: 45%;
+    max-height: 475px;
 }
 
 
